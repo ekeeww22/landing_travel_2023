@@ -1,0 +1,20 @@
+/* 1. title */
+.title_bg {height:1500px; background:url(../images/title_bg1.jpg) no-repeat fixed center; background-size:cover;} 
+.title_bg .title {width:1200px; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:center; padding:100px 0 70px; } 
+.title_bg .title .top {display:flex; flex-flow:column nowrap; align-items:center;  padding-top:100px; margin-bottom:774px;}
+.title_bg .title .top .sub_title {font-size: 1.75rem; letter-spacing: -0.04rem; color:#001F3D;}
+.title_bg .title .top h1 {margin:20px 0;}
+.title_bg .title .top h1 img {}
+.title_bg .title .top .title_en {}
+.title_bg .title .top .title_en img {}
+.title_bg .title .btm {display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between; }
+.title_bg .title .btm .kota_bnr {margin-right:10px;}
+.title_bg .title .btm .kota_bnr img {}
+.title_bg .title .btm .contents {line-height:1.75rem; letter-spacing: -0.04rem; color:#001F3D;}
+.title_bg .title .btm .contents span {color: #1060D7;}
+/* 2. */
+/* hotel 홈페이지 바로가기 퀵버튼 */
+.hotel_btn {display:flex; flex-flow:column nowrap; width:140px; position:fixed; top:600px; right:0; }
+.hotel_btn a {background:#112036; padding:5px; display:flex; flex-flow:column nowrap; align-items:center; border:1px solid #fff;}
+.hotel_btn a span {font-size: 0.75rem; letter-spacing: -0.04rem; color:#f1f1f1; text-align:center; margin-bottom:5px;}
+.hotel_btn a img {width:30px; height:30px;}
