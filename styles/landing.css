@@ -1,7 +1,7 @@
 /* 1. title */
-.title_bg {height:1500px; background:url(../images/title_bg1.jpg) no-repeat fixed center; background-size:cover;} 
+.title_bg {height:1500px; background:url(../images/title_bg1.jpg) no-repeat center; background-size:cover;} 
 .title_bg .title {width:1200px; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:center; padding:100px 0 70px; } 
-.title_bg .title .top {display:flex; flex-flow:column nowrap; align-items:center;  padding-top:100px; margin-bottom:774px;}
+.title_bg .title .top {display:flex; flex-flow:column nowrap; align-items:center;  padding-top:100px; margin-bottom:620px;}
 .title_bg .title .top .sub_title {font-size: 1.75rem; letter-spacing: -0.04rem; color:#001F3D;}
 .title_bg .title .top h1 {margin:20px 0;}
 .title_bg .title .top h1 img {}
@@ -10,11 +10,34 @@
 .title_bg .title .btm {display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between; }
 .title_bg .title .btm .kota_bnr {margin-right:10px;}
 .title_bg .title .btm .kota_bnr img {}
-.title_bg .title .btm .contents {line-height:1.75rem; letter-spacing: -0.04rem; color:#001F3D;}
-.title_bg .title .btm .contents span {color: #1060D7;}
+.title_bg .title .btm .contents_bg {display:flex; flex-flow:row nowrap; justify-content: center; width:1050px; padding:50px 20px; background:url(../images/contents_bg.png) no-repeat center;}
+.title_bg .title .btm .contents_bg .contents {line-height:1.75rem; letter-spacing: -0.04rem; color:#001F3D;}
+.title_bg .title .btm .contents_bg .contents span {color: #1060D7;}
 /* 2. */
 /* hotel 홈페이지 바로가기 퀵버튼 */
 .hotel_btn {display:flex; flex-flow:column nowrap; width:140px; position:fixed; top:600px; right:0; }
 .hotel_btn a {background:#112036; padding:5px; display:flex; flex-flow:column nowrap; align-items:center; border:1px solid #fff;}
 .hotel_btn a span {font-size: 0.75rem; letter-spacing: -0.04rem; color:#f1f1f1; text-align:center; margin-bottom:5px;}
 .hotel_btn a img {width:30px; height:30px;}
+.youtubequiz_bg {background:url(../images/you_qu_bg.jpg) no-repeat center; background-size:cover;}
+.youtubequiz_bg .youtubequiz {}
+.youtubequiz_bg .youtubequiz .youtube_wrap {}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title {}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left {}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left .title {}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left img {}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .right {}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .right img {}
+.youtubequiz_bg .youtubequiz .youtube_wrap iframe {}
+.youtubequiz_bg .youtubequiz .quiz_wrap {}
+.youtubequiz_bg .youtubequiz .quiz_wrap h2 {}
+.youtubequiz_bg .youtubequiz .quiz_wrap h3 {}
+.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm {}
+.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset {}
+.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset ul {}
+.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset ul li {}
+.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset ul li input {}
+.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset ul li input span {}
+.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset #answer_btn {}
+.youtubequiz_bg .youtubequiz .quiz_wrap .event {}
+.youtubequiz_bg .youtubequiz .quiz_wrap .event span {}
