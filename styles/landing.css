@@ -1,43 +1,160 @@
-/* 1. title */
-.title_bg {height:1500px; background:url(../images/title_bg1.jpg) no-repeat center; background-size:cover;} 
-.title_bg .title {width:1200px; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:center; padding:100px 0 70px; } 
-.title_bg .title .top {display:flex; flex-flow:column nowrap; align-items:center;  padding-top:100px; margin-bottom:620px;}
-.title_bg .title .top .sub_title {font-size: 1.75rem; letter-spacing: -0.04rem; color:#001F3D;}
-.title_bg .title .top h1 {margin:20px 0;}
-.title_bg .title .top h1 img {}
-.title_bg .title .top .title_en {}
-.title_bg .title .top .title_en img {}
-.title_bg .title .btm {display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between; }
-.title_bg .title .btm .kota_bnr {margin-right:10px;}
-.title_bg .title .btm .kota_bnr img {}
-.title_bg .title .btm .contents_bg {display:flex; flex-flow:row nowrap; justify-content: center; width:1050px; padding:50px 20px; background:url(../images/contents_bg.png) no-repeat center;}
-.title_bg .title .btm .contents_bg .contents {line-height:1.75rem; letter-spacing: -0.04rem; color:#001F3D;}
-.title_bg .title .btm .contents_bg .contents span {color: #1060D7;}
-/* 2. */
+/* 모든 타이틀 */
+* .all_title {display:flex; flex-flow:column nowrap; align-items:center; margin-bottom:70px; }
+* .all_title .title_en {font-family: 'Allison', cursive; color: #FFF; font-size: 6rem; letter-spacing: -0.02em; text-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.5); transition:all linear 1s;}
+* .all_title .title_en:hover {color:#303030;}
+* .all_title h2 {letter-spacing: -0.25rem; line-height: 2.8125rem; font-size: 5rem; font-family: Jua; color:#303030; transition:transform 1s, all linear 1s;}
+* .all_title h2:hover {color:#fff; transform:translateY(-50px) scale(1.2);}
 /* hotel 홈페이지 바로가기 퀵버튼 */
 .hotel_btn {display:flex; flex-flow:column nowrap; width:140px; position:fixed; top:600px; right:0; }
-.hotel_btn a {background:#112036; padding:5px; display:flex; flex-flow:column nowrap; align-items:center; border:1px solid #fff;}
-.hotel_btn a span {font-size: 0.75rem; letter-spacing: -0.04rem; color:#f1f1f1; text-align:center; margin-bottom:5px;}
+.hotel_btn a {background:#112036; padding:10px; display:flex; flex-flow:column nowrap; align-items:center; border:1px solid #fff; transition:background-color 0.5s;}
+.hotel_btn a:hover {background:dodgerblue; }
+.hotel_btn a span {font-family: 'Jua', sans-serif; font-size: 0.75rem; color:#f1f1f1; text-align:center; margin-bottom:5px;}
 .hotel_btn a img {width:30px; height:30px;}
-.youtubequiz_bg {background:url(../images/you_qu_bg.jpg) no-repeat center; background-size:cover;}
-.youtubequiz_bg .youtubequiz {}
+/* 1. title */
+.title_bg {height:1500px; background:url(../images/title_bg.jpg) no-repeat fixed center; background-size:cover; padding:100px 0 70px; } 
+.title_bg:hover {background:url(../images/title_bg1.jpg) no-repeat center; background-size:cover;}
+.title_bg .title {max-width:1200px; margin:0 auto; display:flex; flex-flow:column nowrap; align-items:center; justify-content:space-between; }
+.title_bg .title .top {display:flex; flex-flow:column nowrap; align-items:center; padding-top:100px;}
+.title_bg .title .top .sub_title {font-size: 1.75rem; letter-spacing: -0.02rem; color:#5A7399; font-family: Gowun Batang; transition:transform 1s;}
+.title_bg .title .top .sub_title:hover {transform:translateY(-50px);}
+/* 메인타이틀 */
+.title_bg .title .top .main_title {width:1000px; display:flex; flex-flow:row nowrap; justify-content: space-between; position:relative; margin:30px 0;}
+.title_bg .title .top .main_title > img {width:128px; height:128px; display:inline-block; transition:transform 0.5s;}
+.title_bg .title .top .main_title > img:nth-of-type(1):hover {transform:translateX(-30px);}
+.title_bg .title .top .main_title > img:nth-of-type(2):hover {transform:translateX(30px);}
+.title_bg .title .top .main_title .title_kota {position: relative; }
+.title_bg .title .top .main_title .title_kota img {display:inline-block; position: absolute; left:-350px; }
+.title_bg .title .top .main_title .title_kota:hover img:nth-child(2) {display:none;}
+.title_bg .title .top .title_en {color: #FFF; font-size: 6rem; text-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.40); transition:transform 1s, all 1s; }
+.title_bg .title .top .title_en:hover {color:#5A7399; transform:scale(1.2); }
+.title_bg .title .middle {width:1200px; height:630px; position:relative; }
+.title_bg .title .middle img {width:300px; height:300px; position:absolute; right:0; bottom:0; margin-bottom:120px; }
+.title_bg .title .middle .bnr1 {}
+.title_bg .title .middle .bnr2 {}
+.title_bg .title .middle:hover .bnr1 {display:none; width:120%;}
+/* 2. youtube quiz */
+.youtubequiz_bg {background:url(../images/you_qu_bg.jpg) no-repeat center; background-size:cover; padding:100px 0;}
+.youtubequiz_bg .youtubequiz {width:1200px; margin:0 auto;  display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;}
 .youtubequiz_bg .youtubequiz .youtube_wrap {}
-.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title {}
-.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left {}
-.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left .title {}
-.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left img {}
-.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .right {}
-.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .right img {}
-.youtubequiz_bg .youtubequiz .youtube_wrap iframe {}
-.youtubequiz_bg .youtubequiz .quiz_wrap {}
-.youtubequiz_bg .youtubequiz .quiz_wrap h2 {}
-.youtubequiz_bg .youtubequiz .quiz_wrap h3 {}
-.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm {}
-.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset {}
-.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset ul {}
-.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset ul li {}
-.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset ul li input {}
-.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset ul li input span {}
-.youtubequiz_bg .youtubequiz .quiz_wrap .quiz_frm fieldset #answer_btn {}
-.youtubequiz_bg .youtubequiz .quiz_wrap .event {}
-.youtubequiz_bg .youtubequiz .quiz_wrap .event span {}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title {display:flex; flex-flow:row nowrap;}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left {width:500px; height:48px; padding:0 30px; border:1px solid #9abef3; background-color:#fff; border-radius:35px 0 0 35px; display: flex; flex-flow:row nowrap; justify-content: space-between; align-items: center;}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left .title {font-size: 1.25rem; letter-spacing: -0.02rem; color: #112036; font-family: 'Gowun Batang', serif; transition:all 1s;}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left .title:hover {color:darkturquoise;}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .left img {width:30px; height:30px;}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .right {width:70px; height:48px; border:1px solid #9abef3; background-color:#cee8ff; border-radius:0 35px 35px 0; text-align:center; line-height:55px; transition:all 1s;}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .right:hover {background-color:#fff;}
+.youtubequiz_bg .youtubequiz .youtube_wrap .youtube_title .right img {width:20px; height:20px;}
+.youtubequiz_bg .youtubequiz .youtube_wrap iframe {margin-top:50px ; width:570px; height:320px;}
+.youtubequiz_bg .youtubequiz .quiz_wrap > * {font-family: 'Jua', sans-serif; color:#303030; letter-spacing: -0.02em; margin-bottom:20px;}
+.youtubequiz_bg .youtubequiz .quiz_wrap {display:flex; flex-flow:column nowrap; justify-content:space-around;}
+.youtubequiz_bg .youtubequiz .quiz_wrap h2 {font-size: 3.9375rem; text-align:center; transition:all 1s;}
+.youtubequiz_bg .youtubequiz .quiz_wrap h2:hover {color:#fff; transform:translateY(-20px);}
+.youtubequiz_bg .youtubequiz .quiz_wrap h3 {font-size: 1.625rem; line-height: 2.1875rem; text-align:center; transition:all 1s;}
+.youtubequiz_bg .youtubequiz .quiz_wrap h3:hover {color:purple; transform:scale(1.1);}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm {}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset {display:flex; flex-flow:column nowrap; align-items: center;}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset ul {align-self:flex-start;}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset ul li {margin-bottom:20px;}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset ul li:last-child {margin-bottom:0;}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset ul li label input {appearance:none;}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset ul li label span {background:url(../images/unchecked.png) no-repeat 0 ; padding-left:30px; font-family: 'Jua', sans-serif; font-size: 1.33rem; color:#303030; transition:all 0.3s;}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset ul li label span:hover {color:#f12f77; }
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset ul li input:checked+span {background:url(../images/checked.png) no-repeat 0;}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset #answer_btn {margin-top:20px; padding:15px 30px; background-color:#f12f77; border-radius:30px; transition:all 0.5s, transform 0.5s;}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset #answer_btn:hover {background-color:mediumpurple; transform:scale(1.2);}
+.youtubequiz_bg .youtubequiz .quiz_wrap #quiz_frm fieldset #answer_btn span {font-family: 'Jua', sans-serif; color:#fff;}
+.youtubequiz_bg .youtubequiz .quiz_wrap .event {text-align:center; font-size: 1.625rem; line-height: 2.8125rem; transition:all 1s;}
+.youtubequiz_bg .youtubequiz .quiz_wrap .event:hover {transform: scale(1.2);}
+.youtubequiz_bg .youtubequiz .quiz_wrap .event span {font-family: 'Jua', sans-serif; color: #2B195E; font-size: 2.1875rem; transition:all 1s;}
+.youtubequiz_bg .youtubequiz .quiz_wrap .event span:hover {color:crimson;}
+/* 3. 추천 여행지 */
+.tour_bg {background:url(../images/tour_spot_bg.jpg) no-repeat fixed; background-size:cover; padding:150px 0;}
+.tour_bg .tour_wrap {max-width:1200px; margin:0 auto; display:flex; flex-flow:column nowrap; align-items:center; justify-content:space-between;}
+/* all_title */
+/* .tour_bg .tour_wrap .all_title {display:flex; flex-flow:column nowrap; align-items:center; margin-bottom:70px; }
+.tour_bg .tour_wrap .all_title .title_en {font-family: 'Allison', cursive; color: #FFF; font-size: 7.5rem; letter-spacing: -0.02em; text-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.5);}
+.tour_bg .tour_wrap .all_title h2 {letter-spacing: -0.25rem; line-height: 2.8125rem; font-size: 6.25rem; font-family: Jua; color:#303030;} */
+.tour_bg .tour_wrap .contents {display:flex; flex-flow:column nowrap; align-items:center; justify-content:space-between; }
+/* 추천여행지 top */
+.tour_bg .tour_wrap .contents .contents_top {display:flex; flex-flow:row nowrap; justify-content:center; margin-bottom:50px;}
+.tour_bg .tour_wrap .contents .contents_top .tourspot {margin-right:50px; width:480px; height:480px; border-radius:50%; transition:transform 0.5s;}
+.tour_bg .tour_wrap .contents .contents_top .tourspot:first-child {background:url(../images/mustapha_tower.jpg) no-repeat center ; background-size:cover;}
+.tour_bg .tour_wrap .contents .contents_top .tourspot:first-child:hover {background:url(../images/mustapha_tower_b.jpg) no-repeat; width:600px; height:476px; transform:scale(1.3); border-radius: 0%; box-shadow: 0 0 30px 0 rgb(255,255,255);}
+.tour_bg .tour_wrap .contents .contents_top .tourspot:last-child {background:url(../images/jesselton_point.jpg) no-repeat center; background-size:cover; margin-right:0; }
+.tour_bg .tour_wrap .contents .contents_top .tourspot:last-child:hover {background:url(../images/jesselton_point_b.jpg) no-repeat; width:600px; height:425px; transform:scale(1.3); border-radius: 0%; box-shadow: 0 0 30px 0 rgb(255,255,255);}
+/* 추천여행지 btm */
+.tour_bg .tour_wrap .contents .contents_btm {display:flex; flex-flow:row nowrap; justify-content:center;}
+.tour_bg .tour_wrap .contents .contents_btm .tourspot {margin-right:50px; width:480px; height:480px; border-radius:50%; transition:transform 0.5s;}
+.tour_bg .tour_wrap .contents .contents_btm .tourspot:first-child {background:url(../images/mosque.jpg) no-repeat center;  background-size:cover;}
+.tour_bg .tour_wrap .contents .contents_btm .tourspot:first-child:hover {background:url(../images/mosque_b.jpg) no-repeat; width:600px; height:556px; transform:scale(1.3); border-radius: 0%; box-shadow: 0 0 30px 0 rgb(255,255,255);}
+.tour_bg .tour_wrap .contents .contents_btm .tourspot:last-child {background:url(../images/market.jpg) no-repeat center; background-size:cover; margin-right:0; }
+.tour_bg .tour_wrap .contents .contents_btm .tourspot:last-child:hover {background:url(../images/market_b.jpg) no-repeat; width:600px; height:495px; transform:scale(1.3); border-radius: 0%; box-shadow: 0 0 30px 0 rgb(255,255,255);}
+.tour_bg .tour_wrap .contents .contents_btm {}
+.tour_bg .tour_wrap .contents .contents_btm .tourspot {}
+.tour_bg .tour_wrap .contents .contents_btm .tourspot .desc {}
+.tour_bg .tour_wrap .contents .contents_btm .tourspot h3 {}
+/* 추천 액티비티 */
+.activity_bg {background:url(../images/activity_bg.jpg) no-repeat fixed center; background-size:cover; padding:150px 0;}
+.activity_bg .activity {width:1200px; margin:0 auto; }
+.activity_bg .activity .contents {width:100%; display:flex; flex-flow:column nowrap; align-items:center; }
+.activity_bg .activity .contents .top_bg {width:1200px; background-color:#fff; padding:50px 0 20px; border-radius:50px; margin-bottom:50px;}
+.activity_bg .activity .contents .top_bg .photo {width:1200px; height:500px; background:url(../images/activity_1.jpg) no-repeat center; background-size:cover; transition:transform ease-out 0.5s;}
+.activity_bg .activity .contents .top_bg .photo:hover {background:url(../images/activity_1_b.jpg) no-repeat center; transform:scale(1.1); width: 1440px; height:640px; box-shadow: 0 0 30px 0 rgb(255,255,255);}
+.activity_bg .activity .contents .top_bg .tourtitle_bg {width: 1200px; height:174px; padding:80px 30px 20px 40px; background:url(../images/tour1_bg.png) no-repeat center; background-size:cover; display:flex; flex-flow:row nowrap; justify-content:center; align-items:flex-end; }
+.activity_bg .activity .contents .top_bg .tourtitle_bg > * {font-family: 'Gowun Batang', serif; color:#303030;  letter-spacing:-0.04em; font-weight:700;}
+.activity_bg .activity .contents .top_bg .tourtitle_bg h3 {font-size: 2.369rem; margin-right:20px;}
+.activity_bg .activity .contents .top_bg .tourtitle_bg .desc {font-size: 1.777rem;}
+.activity_bg .activity .contents .btm_bg {width:1200px; background-color:#112036; padding:50px 0 20px; border-radius:50px; }
+.activity_bg .activity .contents .btm_bg .photo {width:1200px; height:500px; background:url(../images/activity_2.jpg) no-repeat center; background-size:cover; transition:transform ease-out 0.5s;}
+.activity_bg .activity .contents .btm_bg .photo:hover {background-image:url(../images/activity_2_g.jpg) no-repeat center; transform:scale(1.1); width: 1440px; height:640px; box-shadow: 0 0 30px 0 rgb(255,255,255);}
+.activity_bg .activity .contents .btm_bg .tourtitle_bg {width: 1200px; height:174px; padding:80px 30px 20px 40px; background:url(../images/tour2_bg.png) no-repeat center; background-size:cover; display:flex; flex-flow:row nowrap; justify-content:center; align-items:flex-end; }
+.activity_bg .activity .contents .btm_bg .tourtitle_bg > * {font-family: 'Gowun Batang', serif; color:#f1f1f1; letter-spacing:-0.04em; font-weight:700;}
+.activity_bg .activity .contents .btm_bg .tourtitle_bg h3 {font-size: 2.369rem; margin-right:20px;}
+.activity_bg .activity .contents .btm_bg .tourtitle_bg .desc {font-size: 1.777rem;}
+/* 추천 리조트 */
+.resort_bg {background:url(../images/resort_main_bg.jpg) no-repeat fixed center; background-size:cover; padding:150px 0;}
+.resort_bg .resort_wrap {width:1200px; margin:0 auto; display:flex; flex-flow:column nowrap; align-items:center;  }
+.resort_bg .resort_wrap .resort_list {display:flex; flex-flow:column nowrap; align-items:center; justify-content: center;}
+.intro_bg > * {font-family: 'Gowun Batang', serif; letter-spacing: -0.04em; color:#303030; font-weight: 700; }
+/* 추천 리조트 top */
+.resort_bg .resort_wrap .resort_list .top {height:1110px; display:flex; flex-flow:column nowrap; position:relative;}
+.resort_bg .resort_wrap .resort_list .top .intro_bg {width:1120px; height:900px;  padding:70px 60px; display:flex; flex-flow:column nowrap; justify-content: space-between; background:url(../images/resort_bg.png) no-repeat center; background-size:cover;}
+.resort_bg .resort_wrap .resort_list .top .intro_bg h3 {text-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25); font-size: 2.369rem; margin-bottom: 30px; transition:transform 1s, all 1s;}
+.resort_bg .resort_wrap .resort_list .top .intro_bg h3:hover {transform:scale(1.2) translateX(50px); color:palevioletred;}
+.resort_bg .resort_wrap .resort_list .top .intro_bg p {font-size: 1.5rem; line-height: 2.25rem; margin-bottom: 30px; transition:transform 1s, all 1s;}
+.resort_bg .resort_wrap .resort_list .top .intro_bg p:hover {transform:scale(1.2) translateX(50px); color:#5A7399;}
+.resort_bg .resort_wrap .resort_list .top .intro_bg .resort_photo {width:1000px; height:600px; background:url(../images/resort/shang_main.jpg) no-repeat center; background-size:cover; transition:transform ease 0.5s;}
+.resort_bg .resort_wrap .resort_list .top .intro_bg .resort_photo:hover {background:url(../images/resort/shang_main1.jpg) no-repeat center; transform:scale(1.2); box-shadow: 0 0 20px 0 rgb(255,255,255); }
+.resort_bg .resort_wrap .resort_list .top .detail {display:flex; flex-flow:row nowrap; position: absolute; bottom:100px; right:0; }
+.resort_bg .resort_wrap .resort_list .top .detail .photo { width:280px; height:280px; border-radius:50%; border:5px solid rgba(255,255,255,0.5); box-shadow: 0 0 5px 0 rgb(255,255,255); margin-right:40px;}
+.resort_bg .resort_wrap .resort_list .top .detail .photo:nth-child(1) {background:url(../images/resort/shang_pool.jpg) no-repeat center; background-size:cover; transition:transform 0.5s; }
+.resort_bg .resort_wrap .resort_list .top .detail .photo:nth-child(1):hover {transform:scale(1.5) translateY(-100px);}
+.resort_bg .resort_wrap .resort_list .top .detail .photo:nth-child(2) {background:url(../images/resort/shang_room.jpg) no-repeat center; background-size:cover; transition:transform 0.5s; }
+.resort_bg .resort_wrap .resort_list .top .detail .photo:nth-child(2):hover {transform:scale(1.5) translateY(-100px);}
+.resort_bg .resort_wrap .resort_list .top .detail .photo:nth-child(3) {background:url(../images/resort/shang_view.jpg) no-repeat center; background-size:cover; transition:transform 0.5s; }
+.resort_bg .resort_wrap .resort_list .top .detail .photo:nth-child(3):hover {transform:scale(1.5) translateY(-100px);}
+/* 추천 리조트 btm */
+.resort_bg .resort_wrap .resort_list .btm {height:1110px; display:flex; flex-flow:column nowrap; position:relative;}
+.resort_bg .resort_wrap .resort_list .btm .intro_bg {width:1120px; height:900px; padding:70px 60px; display:flex; flex-flow:column nowrap; justify-content: space-between; background:url(../images/resort_bg.png) no-repeat center; background-size:cover; text-align: right;}
+.resort_bg .resort_wrap .resort_list .btm .intro_bg h3 {text-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25); font-size: 2.369rem; margin-bottom: 30px; transition:transform 1s, all 1s;}
+.resort_bg .resort_wrap .resort_list .btm .intro_bg h3:hover {transform:scale(1.2) translateX(-50px); color:palevioletred;}
+.resort_bg .resort_wrap .resort_list .btm .intro_bg p {font-size: 1.5rem; line-height: 2.25rem; margin-bottom: 30px; transition:transform 1s, all 1s;}
+.resort_bg .resort_wrap .resort_list .btm .intro_bg p:hover { transform:scale(1.2) translateX(-50px); color:#5A7399;}
+.resort_bg .resort_wrap .resort_list .btm .intro_bg .resort_photo {width:1000px; height:600px; background:url(../images/resort/su_main.jpg) no-repeat center; background-size:cover; transition:transform ease 0.5s;}
+.resort_bg .resort_wrap .resort_list .btm .intro_bg .resort_photo:hover {background:url(../images/resort/su_main2.jpg) no-repeat center; transform:scale(1.2); box-shadow: 0 0 20px 0 rgb(255,255,255); }
+.resort_bg .resort_wrap .resort_list .btm .detail {display:flex; flex-flow:row nowrap; position: absolute; bottom:100px; left:0; }
+.resort_bg .resort_wrap .resort_list .btm .detail .photo { width:280px; height:280px; border-radius:50%; border:5px solid rgba(255,255,255,0.5); box-shadow: 0 0 5px 0 rgb(255,255,255); margin-right:40px;}
+.resort_bg .resort_wrap .resort_list .btm .detail .photo:nth-child(1) {background:url(../images/resort/su_pool.jpg) no-repeat center; background-size:cover; transition:transform 0.5s; }
+.resort_bg .resort_wrap .resort_list .btm .detail .photo:nth-child(1):hover {transform:scale(1.5) translateY(-100px);}
+.resort_bg .resort_wrap .resort_list .btm .detail .photo:nth-child(2) {background:url(../images/resort/su_spa.jpg) no-repeat center; background-size:cover; transition:transform 0.5s; }
+.resort_bg .resort_wrap .resort_list .btm .detail .photo:nth-child(2):hover {transform:scale(1.5) translateY(-100px);}
+.resort_bg .resort_wrap .resort_list .btm .detail .photo:nth-child(3) {background:url(../images/resort/su_hall.jpg) no-repeat center; background-size:cover; transition:transform 0.5s; }
+.resort_bg .resort_wrap .resort_list .btm .detail .photo:nth-child(3):hover {transform:scale(1.5) translateY(-100px);}
+/* 6. 꿀팁 */
+.tips_bg {background:url(../images/tip_bg.png) no-repeat center ; background-size:cover; padding:150px 0;}
+.tips_bg .tips {width:1200px; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content: space-between; padding-top:70px;}
+.tips_bg .tips .tip {width:1200px; display:flex; flex-flow:row nowrap; align-items:center; margin:0 0 30px 100px;}
+.tips_bg .tips .tip img {width:100px; height:100px; margin-right:50px; transition:transform 0.3s;}
+.tips_bg .tips .tip img:hover {transform:translateY(-30px);}
+.tips_bg .tips .tip span {font-family: Jua; font-size: 1.75rem; line-height:50px; letter-spacing: -0.04em; color:#605d52; transition: transform 1s;}
+.tips_bg .tips .tip span:hover {transform:scale(1.2);}
